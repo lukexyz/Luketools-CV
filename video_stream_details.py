@@ -1,3 +1,19 @@
+"""
+Extracting and printing video stream details
+Example output:
+
+Created capture: ../data/drop.avi
+    Frame count: 182
+    Frame width: 256
+    Frame height: 240
+    Frame rate: 30.0
+Created capture: 0
+    Frame count: -1
+    Frame width: 640
+    Frame height: 480
+    Frame rate: 30.0
+"""
+
 import cv2
 
 def print_capture_properties(*args):
