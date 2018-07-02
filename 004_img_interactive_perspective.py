@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('../data/circlesgrid.png', cv2.IMREAD_COLOR)
+img = cv2.imread('data/circlesgrid.png', cv2.IMREAD_COLOR)
+img = cv2.imread('data/book_angled_photo_small.png', cv2.IMREAD_COLOR)
 show_img = np.copy(img)
 
 selected_pts = []
@@ -47,18 +48,14 @@ def select_points(image, points_num):
 
 show_img = np.copy(img)
 src_pts = select_points(show_img, 4)
-dst_pts = np.array([[0, 240], [0, 0], [240, 0], [240, 240]], dtype=np.float32)
+h, w = show_img.shape[0], show_img.shape[1]
+dst_pts = np.array([[0, h], [0, 0], [h, 0], [h, h]], dtype=np.float32)
 
 perspective_m = cv2.getPerspectiveTransform(src_pts, dst_pts)
 
-unwarped_img = cv2.warpPerspective(img, perspective_m, (240, 240))
+unwarped_img = cv2.warpPerspective(img, perspective_m, (h, h))
 
 cv2.imshow('result', np.hstack((show_img, unwarped_img)))
 k = cv2.waitKey()
 
 cv2.destroyAllWindows()
-
-
-
-
-
