@@ -15,3 +15,15 @@ tensor_nchw = tensor_chw[np.newaxis, ...]
 
 # Output tensor shape
 print("\n  Tensor shape:", tensor_nchw.shape)
+
+
+"""
+Output:
+
+--------------------------------
+OpenCV version 3.4.1
+
+Lena.png shape: (512, 512, 3)
+  Tensor shape: (1, 3, 512, 512)
+--------------------------------
+"""
