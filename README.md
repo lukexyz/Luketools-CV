@@ -22,7 +22,7 @@ Five segmentation algorithms are explored:
 
 File [005_background_subtraction.py](005_background_subtraction.py)
 
----
+</p>
 
 ### Interactive Perspective Fix
 
@@ -43,7 +43,7 @@ original image and new image are displayed side by side.
 
 File [004_img_interactive_perspective.py](004_img_interactive_perspective.py)
 
----
+</p>
 
 ### Inception NN Object Detection
 
@@ -77,7 +77,7 @@ classify('../data/shuttle.mp4', resnet_caffe, 'data', 'prob', mean, class_names)
 
 File [notebooks/DL_googlenet_inception_caffe.ipynb](notebooks/DL_googlenet_inception_caffe.ipynb)
 
----
+</p>
 
 ### OpenCV Panorama
 
@@ -92,4 +92,4 @@ as a panorama image. A `0.25x` preview is displayed upon success.
 
 File [006_panorama.py](006_panorama.py)
 
-
+</p>
