@@ -22,6 +22,8 @@ Five segmentation algorithms are explored:
 
 File [005_background_subtraction.py](005_background_subtraction.py)
 
+---
+
 ### Interactive Perspective Fix
 
 OpenCV app to recalculate perspective based on user inputs.
@@ -41,6 +43,8 @@ original image and new image are displayed side by side.
 
 File [004_img_interactive_perspective.py](004_img_interactive_perspective.py)
 
+---
+
 ### Inception NN Object Detection
 
 Deep learning models trained on the `ImageNet` database
@@ -59,7 +63,7 @@ Classification function for the neural network works as follows:
 </p>
 <p></p>
 
-Other neural nets can be loaded from the `cv2.dnn.readNetFromCaffe` function.
+Other neural nets can be loaded from the `cv2.dnn.readNetFromCaffe` method.
 
 ```
 
@@ -73,6 +77,19 @@ classify('../data/shuttle.mp4', resnet_caffe, 'data', 'prob', mean, class_names)
 
 File [notebooks/DL_googlenet_inception_caffe.ipynb](notebooks/DL_googlenet_inception_caffe.ipynb)
 
+---
 
 ### OpenCV Panorama
+
+A python script to create flat panoramas from images using the
+`cv2.createStitcher` stitching algorithm. The method accepts an array
+of images to combine, and returns a stitching result status as well
+as a panorama image. A `0.25x` preview is displayed upon success.
+
+<p align="center">
+  <img src="figures/panorama_preview.PNG">
+</p>
+
+File [006_panorama.py](006_panorama.py)
+
 
