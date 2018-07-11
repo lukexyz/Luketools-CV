@@ -1,9 +1,5 @@
 # Computer Vision
-Misc OpenCV code for working on images and video streams.
-
-
-###
-
+:mount_fuji:  Misc OpenCV code for working with images and video streams.
 
 ### Background Subtraction
 
@@ -21,10 +17,10 @@ Five segmentation algorithms are explored:
     5. KNN Nearest Neighbors (best)
 
 <p align="center">
-  <img width="477" height="430" src="figures/Background_subtraction.PNG">
+  <img src="figures/Background_subtraction_2.PNG">
 </p>
 
-`$python` [005_background_subtraction.py](005_background_subtraction.py)
+File [005_background_subtraction.py](005_background_subtraction.py)
 
 ### Interactive Perspective Fix
 
@@ -43,7 +39,7 @@ original image and new image are displayed side by side.
   <img src="figures/Camera_to_scanned_perspective.png">
 </p>
 
-`$python` [004_img_interactive_perspective.py](004_img_interactive_perspective.py)
+File [004_img_interactive_perspective.py](004_img_interactive_perspective.py)
 
 ### Inception NN Object Detection
 
@@ -73,4 +69,10 @@ resnet_cafferesnet_  = cv2.dnn.readNetFromCaffe('../data/resnet_50.prototxt',
 mean = np.load('../data/resnet_50_mean.npy')
 classify('../data/shuttle.mp4', resnet_caffe, 'data', 'prob', mean, class_names)
 ```
+
+
+File [notebooks/DL_googlenet_inception_caffe.ipynb](notebooks/DL_googlenet_inception_caffe.ipynb)
+
+
+### OpenCV Panorama
 
