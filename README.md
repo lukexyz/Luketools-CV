@@ -20,6 +20,15 @@ Five segmentation algorithms are explored:
   <img src="figures/Background_subtraction_2.PNG">
 </p>
 
+Call the function for the selected algorithm using the following:
+
+```
+# Nearest Neighbors
+fgbg = cv2.createBackgroundSubtractorKNN()
+split_image_fgbg(subtractor=fgbg, open_sz=(5, 5), close_sz=(25, 25),
+                 show_bg=True, show_shdw=False)
+```
+
 File [005_background_subtraction.py](005_background_subtraction.py)
 
 </p>
@@ -89,6 +98,21 @@ as a panorama image. A `0.25x` preview is displayed upon success.
 <p align="center">
   <img src="figures/panorama_preview.PNG">
 </p>
+
+The main stitching method is relatively straight forward to call.
+
+```
+stitcher = cv2.createStitcher()
+ret, pano = stitcher.stitch(frames)
+```
+
+But can return the following error status when the stitch fails due to
+poor input frames.
+
+    cv2.STITCHER_OK
+    cv2.STITCHER_ERR_NEED_MORE_IMGS
+    cv2.STITCHER_ERR_HOMOGRAPHY_EST_FAIL
+    cv2.STITCHER_ERR_CAMERA_PARAMS_ADJUST_FAIL
 
 File [006_panorama.py](006_panorama.py)
 
