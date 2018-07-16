@@ -3,7 +3,7 @@
 
 ### Background Subtraction
 
-`Background subtraction` is the removal of dynamic elements from a static
+`Background subtraction` is the removal of dynamic elements from a  video to leave the static
 background image. In this example we have a fixed-camera video of cars
 driving along a highway. We wish to isolate a single clear image of the
 background.
