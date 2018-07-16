@@ -96,7 +96,7 @@ of images to combine, and returns a stitching result status as well
 as a panorama image. A `0.25x` preview is displayed upon success.
 
 <p align="center">
-  <img src="figures/panorama_preview.PNG">
+  <img src="figures/panorama_preview_2.PNG">
 </p>
 
 The main stitching method is relatively straight forward to call.
